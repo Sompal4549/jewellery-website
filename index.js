@@ -33,3 +33,22 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+window.addEventListener("mousemove", function (e) {
+  let cursor = document.getElementById("cursor");
+  if (window.innerWidth > 600) {
+    cursor.style.top = `${e.pageY}px`;
+    cursor.style.left = `${e.pageX}px`;
+  }
+});
+var ulitems = document.getElementsByClassName("navLinks");
+// ulitems.forEach((link) => {
+//   link.addEventListener("mouseenter", (event) => {
+//     console.log(event);
+//   });
+// });
+for (let i = 0; i < ulitems.length; i++) {
+  ulitems[i].addEventListener("mouseenter", () => {
+    console.log("hello world");
+  });
+}
+// ulitems.array.forEach((link) => {});
