@@ -12,3 +12,24 @@ window.onclick = function (event) {
     document.getElementById("backdrop").style.display = "none";
   }
 };
+// console.log(navbar);
+
+window.addEventListener("scroll", function () {
+  var nav = document.querySelector("nav");
+  var ulitems = document.getElementsByClassName("navLinks");
+  nav.classList.toggle("sticky", window.scrollY > 0);
+  var next = nav.childNodes;
+  console.log(ulitems);
+
+  if (window.scrollY > 0) {
+    nav.style.color = "black";
+    for (let i = 0; i < ulitems.length; i++) {
+      ulitems[i].style.color = "black";
+    }
+  } else {
+    nav.style.color = "#ffffff";
+    for (let i = 0; i < ulitems.length; i++) {
+      ulitems[i].style.color = "white";
+    }
+  }
+});
