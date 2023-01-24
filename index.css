@@ -239,6 +239,7 @@ h1 strong {
   /* min-height: 70px; */
   max-width: 1330px;
   margin: auto;
+  padding: 10px 20px;
   transform: translate(0, 0px);
   animation-delay: 0s;
   animation-direction: normal;
@@ -251,7 +252,7 @@ h1 strong {
   position: fixed;
   height: auto;
   box-shadow: 1px 3px 4px rgb(96 96 96 / 29%);
-  padding: 0px 0 0px;
+  /* padding: 0px 0 0px; */
   background: #fff;
   top: 0px;
   color: black;
