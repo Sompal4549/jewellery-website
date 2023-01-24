@@ -325,9 +325,9 @@ h1 strong {
     position: absolute;
     max-width: 450px;
     width: 50%;
-    height: 200px;
+    height: 130px;
     background-color: white;
-    top: 38%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: -30px 25px 30px 8px rgba(0, 0, 0, 0.4);
