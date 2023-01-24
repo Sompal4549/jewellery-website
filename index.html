@@ -101,7 +101,18 @@
       <button>click me</button>
     </main>
     <script type="text/javascript">
-      
+      var nav = document.querySelectorAll(".navLinks");
+      console.log(nav);
+      nav.forEach((navitem) => {
+        navitem.addEventListener("mouseleave", () => {
+          cursor.classList.remove("new");
+        });
+        let cursor = document.getElementById("cursor");
+        navitem.addEventListener("mouseover", function () {
+          console.log(navitem);
+          cursor.classList.add("new");
+        });
+      });
     </script>
   </body>
 </html>
